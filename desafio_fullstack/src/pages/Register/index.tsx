@@ -1,9 +1,9 @@
-import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import Register from "./styles";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { useUserContext } from "../../contexts/userContext";
 import schema from "../../validations/requestRegister";
-import { Link } from "react-router-dom";
+import Register from "./styles";
 
 export interface iUserRegister {
   fullName: string;

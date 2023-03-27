@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   return (
     <Login>
-      <h1>Bem-vinde a Minha Agenda</h1>
+      <h1>BEM-VINDE A MINHA AGENDA</h1>
       <form onSubmit={handleSubmit(exportData)}>
         <h3>Faça seu login</h3>
         <div>

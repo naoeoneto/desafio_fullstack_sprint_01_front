@@ -1,10 +1,9 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import HeaderRegister from "./Header";
-import Info from "./Info";
 import Register from "./styles";
 import { useUserContext } from "../../contexts/userContext";
 import schema from "../../validations/requestRegister";
+import { Link } from "react-router-dom";
 
 export interface iUserRegister {
   fullName: string;
@@ -28,9 +27,8 @@ const RegisterPage = () => {
 
   return (
     <Register>
-      <HeaderRegister />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Info />
+        <h3>Crie sua conta</h3>
         <div>
           <label>
             Nome
@@ -97,6 +95,7 @@ const RegisterPage = () => {
           </label>
         </div>
         <button type="submit">Cadastrar</button>
+        <Link to="/">Voltar</Link>
       </form>
     </Register>
   );
